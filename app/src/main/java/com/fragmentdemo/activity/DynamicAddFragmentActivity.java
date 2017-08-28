@@ -34,9 +34,13 @@ public class DynamicAddFragmentActivity extends FragmentActivity {
                 //获取fragmentManager
                 FragmentManager fragmentManager=getSupportFragmentManager();
 //                FragmentManager fragmentManager=getFragmentManager();
-                //开启一个事务
+                //开启一个事务,通过调用beginTransaction()方法开启
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                //向容器内添加事务,使用replace实现
                 fragmentTransaction.replace(R.id.right_layout, anotherRightFragment);
+                //在碎片中模拟返回栈
+                fragmentTransaction.addToBackStack(null);
+                //提交事务，调用commit()方法来完成
                 fragmentTransaction.commit();
             }
         });
