@@ -1,4 +1,4 @@
-package com.fi.fragment;
+package com.fragmentdemo.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,11 +7,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.fi.activity.R;
+import com.fragmentdemo.activity.R;
+
 
 /**
  * 创建者     yangyanfei
- * 创建时间   2017/8/28 0028 18:33
+ * 创建时间   2017/8/29 0029 6:36
  * 作用	      ${TODO}
  * <p/>
  * 版本       $$Rev$$
@@ -19,14 +20,12 @@ import com.fi.activity.R;
  * 更新时间   $$Date$$
  * 更新描述   ${TODO}
  */
-public class RightFragment extends Fragment {
+public class AnotherRightFragment extends Fragment {
+    //当视图被创建的时候调用这个方法,负责UI的创建
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        /**
-         * 通过LayoutInflater的inflate()方法将left_fragment布局动态加载进来
-         */
-        View view=inflater.inflate(R.layout.right_fragment,container,false);
+        View view=inflater.inflate(R.layout.another_right_fragment,container,false);
         return view;
     }
 }

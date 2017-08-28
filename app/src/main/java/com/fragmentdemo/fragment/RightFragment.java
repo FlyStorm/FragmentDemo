@@ -1,4 +1,4 @@
-package com.fi.fragment;
+package com.fragmentdemo.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,7 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.fi.activity.R;
+import com.fragmentdemo.activity.R;
+
 
 /**
  * 创建者     yangyanfei
@@ -19,14 +20,14 @@ import com.fi.activity.R;
  * 更新时间   $$Date$$
  * 更新描述   ${TODO}
  */
-public class LeftFragment extends Fragment {
+public class RightFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         /**
          * 通过LayoutInflater的inflate()方法将left_fragment布局动态加载进来
          */
-        View view=inflater.inflate(R.layout.left_fragment,container,false);
+        View view=inflater.inflate(R.layout.right_fragment,container,false);
         return view;
     }
 }

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.fi.activity.MainActivity">
+    tools:context="com.fragmentdemo.activity.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,6 +29,15 @@
         android:layout_margin="5dp"
         android:gravity="center"
         android:text="碎片的简单用法"
+        android:textAllCaps="false"
+        android:textSize="18sp"/>
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="动态添加碎片"
         android:textAllCaps="false"
         android:textSize="18sp"/>
 
