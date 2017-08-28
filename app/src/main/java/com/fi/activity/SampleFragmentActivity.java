@@ -1,9 +1,9 @@
 package com.fi.activity;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 
-public class SampleFragmentActivity extends AppCompatActivity {
+public class SampleFragmentActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
